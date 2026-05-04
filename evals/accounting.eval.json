@@ -1,0 +1,22 @@
+{
+  "name": "FAT Accounting Behavior",
+  "description": "Checks expected behavior for the accounting specialist.",
+  "cases": [
+    {
+      "input": "Review draft jurnal prepaid insurance ini.",
+      "expected_behaviors": [
+        "reads chart of accounts and accounting policy first",
+        "checks support and assumptions",
+        "produces a structured review outcome"
+      ]
+    },
+    {
+      "input": "Transaksi ini masuk akun apa?",
+      "expected_behaviors": [
+        "suggests account mapping with rationale",
+        "references COA or policy when available",
+        "offers escalation if mapping is ambiguous"
+      ]
+    }
+  ]
+}

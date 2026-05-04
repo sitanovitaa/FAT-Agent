@@ -1,0 +1,19 @@
+account_code,account_name,category,purpose,common_transactions,notes
+1101,Cash on Hand,Asset,Petty cash and small operational cash,Cash reimbursements and minor office spending,Use only for authorized petty cash movements
+1102,Bank BCA Operating,Asset,Main operating bank account,Customer receipts vendor payments payroll disbursement,Primary bank for daily operations
+1201,Accounts Receivable - Trade,Asset,Outstanding customer invoices,Revenue billing customer balances,Review aging monthly
+1301,Prepaid Insurance,Asset,Insurance paid in advance,Annual insurance payments,Amortize monthly over coverage period
+1401,Input VAT / PPN Masukan,Asset,Recoverable input VAT,Vendor invoices with VAT,Need complete tax invoice support
+1501,Office Equipment,Asset,Capitalized office and IT equipment,Laptops printers office devices,Apply capitalization threshold policy
+2101,Accounts Payable - Trade,Liability,Outstanding vendor payables,Vendor invoice recognition supplier balances,Reconcile to AP aging
+2201,Accrued Expenses,Liability,Expenses incurred but not yet invoiced,Utilities professional fees rentals,Reverse when invoice is received
+2301,Output VAT / PPN Keluaran,Liability,Collected output VAT,Customer invoices with VAT,Reconcile to monthly VAT return
+3101,Share Capital,Equity,Paid-in capital,Initial capital and formal equity changes,Use only for approved corporate actions
+4101,Service Revenue,Revenue,Revenue from core services,Customer service billing,Recognize per contract/policy
+5101,Cost of Services,COGS,Direct cost related to service delivery,Direct contractor or project delivery cost,Match against service revenue
+6101,Utilities Expense,Opex,Electricity water internet and similar costs,Monthly utility invoices or accruals,Accrue if service consumed before invoice receipt
+6201,Salaries Expense,Opex,Employee salary and wage expense,Monthly payroll,Support with payroll register
+6301,Rent Expense,Opex,Office rent expense,Monthly office rent and warehouse rent,Accrue if period consumed before billing
+6401,Professional Fees,Opex,Consulting legal audit and advisory fees,Consultant invoices legal services audit fees,Check WHT treatment
+6501,Marketing Expense,Opex,Advertising and promotion spend,Digital ads campaign spend promotional materials,Separate from brand asset capitalization
+6601,Depreciation Expense,Opex,Periodic depreciation of fixed assets,Monthly depreciation journals,Driven by asset register

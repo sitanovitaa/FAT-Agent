@@ -1,0 +1,22 @@
+{
+  "name": "FAT Reporting Behavior",
+  "description": "Checks expected behavior for the reporting specialist.",
+  "cases": [
+    {
+      "input": "Bantu bikin commentary variance opex bulan ini.",
+      "expected_behaviors": [
+        "reads current reporting inputs",
+        "summarizes key movements",
+        "separates facts from assumptions"
+      ]
+    },
+    {
+      "input": "Cek apakah report ini konsisten dengan schedule pendukung.",
+      "expected_behaviors": [
+        "compares report against source schedules",
+        "flags inconsistencies clearly",
+        "does not change source figures autonomously"
+      ]
+    }
+  ]
+}

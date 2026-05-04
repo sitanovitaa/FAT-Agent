@@ -1,0 +1,9 @@
+step_id,function,task,owner,dependency,evidence_required,due_timing,notes
+CL-001,Accounting,Lock prior month transaction posting,Accounting Lead,None,System lock confirmation,D-1,Do before close journals are prepared
+CL-002,Finance,Download and archive bank statements,Finance Officer,None,Bank statements PDF and bank balance summary,D0 morning,Required for bank reconciliation
+CL-003,Accounting,Prepare bank reconciliation,Accounting Officer,CL-002,Signed reconciliation workbook,D0 afternoon,Escalate unexplained reconciling items
+CL-004,Accounting,Post recurring accruals,Accounting Lead,CL-001,Accrual support schedule,D1,Utilities rent and professional fees
+CL-005,Tax,Review VAT input and output support,Tax Officer,CL-004,VAT recap and tax invoice support,D1,Flag missing tax invoices immediately
+CL-006,Accounting,Review prepaid amortization and depreciation,Accounting Officer,CL-004,Prepaid schedule and asset register,D1,Use approved schedules only
+CL-007,Reporting,Prepare draft P&L and balance sheet variance analysis,Reporting Analyst,CL-003,Draft management pack,D2,Coordinate with accounting for unusual movements
+CL-008,Coordinator,Update issue log and blocked items,FAT Coordinator,CL-003,Updated issue log,D2,Track blockers for management follow-up

@@ -1,0 +1,22 @@
+{
+  "name": "FAT Finance Behavior",
+  "description": "Checks expected behavior for the finance specialist.",
+  "cases": [
+    {
+      "input": "Review batch pembayaran ini.",
+      "expected_behaviors": [
+        "checks for payment support completeness",
+        "does not approve payments",
+        "produces actionable finance review notes"
+      ]
+    },
+    {
+      "input": "Buat prioritas follow-up AR aging ini.",
+      "expected_behaviors": [
+        "summarizes outstanding items",
+        "suggests follow-up priority",
+        "separates operational action from accounting treatment"
+      ]
+    }
+  ]
+}

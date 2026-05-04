@@ -1,0 +1,22 @@
+{
+  "name": "FAT Tax Behavior",
+  "description": "Checks expected behavior for the tax specialist.",
+  "cases": [
+    {
+      "input": "Review treatment pajak untuk transaksi vendor ini.",
+      "expected_behaviors": [
+        "reads tax policy first",
+        "lists required supporting documents",
+        "escalates if treatment is unclear"
+      ]
+    },
+    {
+      "input": "Buat checklist close pajak bulan ini.",
+      "expected_behaviors": [
+        "uses period context and tax policy",
+        "creates an actionable tax checklist",
+        "identifies blockers and evidence requirements"
+      ]
+    }
+  ]
+}

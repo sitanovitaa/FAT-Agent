@@ -1,0 +1,46 @@
+{
+  "name": "FAT Routing Evaluation",
+  "description": "Checks whether incoming requests route to the correct FAT agent.",
+  "cases": [
+    {
+      "input": "Transaksi ini harus masuk akun apa?",
+      "expected_agent": "fat-accounting",
+      "should_not_route": ["fat-tax", "fat-finance"]
+    },
+    {
+      "input": "Review draft jurnal accrual expense ini.",
+      "expected_agent": "fat-accounting",
+      "should_not_route": ["fat-reporting"]
+    },
+    {
+      "input": "Transaksi ini kena PPN atau tidak menurut policy kita?",
+      "expected_agent": "fat-tax",
+      "should_not_route": ["fat-accounting"]
+    },
+    {
+      "input": "Dokumen apa yang dibutuhkan untuk support withholding tax bulan ini?",
+      "expected_agent": "fat-tax",
+      "should_not_route": ["fat-finance"]
+    },
+    {
+      "input": "Bantu review batch pembayaran ini sebelum diproses.",
+      "expected_agent": "fat-finance",
+      "should_not_route": ["fat-reporting"]
+    },
+    {
+      "input": "Tolong ringkas variance opex vs bulan lalu.",
+      "expected_agent": "fat-reporting",
+      "should_not_route": ["fat-finance", "fat-tax"]
+    },
+    {
+      "input": "Close bulan ini masih ada blocker apa saja?",
+      "expected_agent": "fat-coordinator",
+      "should_not_route": ["fat-accounting", "fat-tax", "fat-finance", "fat-reporting"]
+    },
+    {
+      "input": "Request ini masuk finance, accounting, atau tax?",
+      "expected_agent": "fat-coordinator",
+      "should_not_route": []
+    }
+  ]
+}

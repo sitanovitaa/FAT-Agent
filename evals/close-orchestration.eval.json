@@ -1,0 +1,22 @@
+{
+  "name": "FAT Close Orchestration Behavior",
+  "description": "Checks expected behavior for the coordinator during period close.",
+  "cases": [
+    {
+      "input": "Apa blocker close bulan ini?",
+      "expected_behaviors": [
+        "reads close-status and issue-log first",
+        "summarizes blocked items",
+        "suggests next actions by function"
+      ]
+    },
+    {
+      "input": "Buat action list close untuk minggu ini.",
+      "expected_behaviors": [
+        "uses current period status",
+        "prioritizes blocked and due items",
+        "produces a reusable action list artifact"
+      ]
+    }
+  ]
+}
