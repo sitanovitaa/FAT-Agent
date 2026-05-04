@@ -89,6 +89,37 @@ git clone https://github.com/sitanovitaa/FAT-Agent.git $HOME\fat-agent-suite
 powershell -ExecutionPolicy Bypass -File $HOME\fat-agent-suite\scripts\install-fat-skills.ps1
 ```
 
+## Cara Update Skill
+
+Jika tim menggunakan **Opsi 2: Copy**, perubahan di repository tidak akan otomatis masuk ke Codex. Setelah ada update, skill perlu disalin ulang ke folder Codex.
+
+### macOS / Linux
+
+```bash
+cd ~/fat-agent-suite
+git pull
+zsh ~/fat-agent-suite/scripts/install-fat-skills.sh
+```
+
+Atau dalam satu baris:
+
+```bash
+cd ~/fat-agent-suite && git pull && zsh ~/fat-agent-suite/scripts/install-fat-skills.sh
+```
+
+### Windows
+
+```powershell
+cd $HOME\fat-agent-suite
+git pull
+powershell -ExecutionPolicy Bypass -File $HOME\fat-agent-suite\scripts\install-fat-skills.ps1
+```
+
+Intinya:
+
+- `git pull` untuk mengambil versi terbaru dari repo
+- `install-fat-skills` untuk menyalin ulang skill terbaru ke folder Codex
+
 ## Cara Pakai Singkat
 
 1. Pasang skill ke Codex.
