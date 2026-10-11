@@ -15,11 +15,15 @@ Period files live in:
 - `fat-workspace/periods/YYYY-MM/issue-log.md`
 - `fat-workspace/periods/YYYY-MM/{finance,accounting,tax,reporting}/`
 
-## Direct Codex File Input
+## Direct File Input
 
-When the user provides a file directly in Codex or references a local file path in the session:
+When the user provides a file directly in the agent session or references a local file path in the session:
 
 1. Read that file first for the current request.
 2. Treat it as the immediate working source for the task.
 3. Keep the original source file unchanged.
 4. If the result is reusable, write the output into the correct `fat-workspace` location.
+
+## Workspace Resolution
+
+Resolve `fat-workspace/` from the active company project, not the installed skill directory. If the workspace is missing, identify the intended company workspace before writing files. Installed skills do not include company data.

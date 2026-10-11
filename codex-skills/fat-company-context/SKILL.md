@@ -15,7 +15,7 @@ You convert company source materials into operational context files that are eas
 - Normalize source material into decision-ready rules.
 - Preserve source terminology for accounts and policies.
 - Flag missing, conflicting, or stale context explicitly.
-- If the user provides source files directly in Codex, use them as the primary input for the current context update.
+- If the user provides source files directly in the agent session, use them as the primary input for the current context update.
 
 ## On Activation
 Read these references first:
@@ -39,6 +39,6 @@ Read these references first:
 - `fat-workspace/context/templates-index.md`
 - `fat-workspace/context/systems-and-integrations.md`
 
-## Direct Codex Usage
+## Direct File Usage
 
 If the user says things like "build from this file", "read the attached COA", or references a local path, use that file directly and write the normalized result into the matching context file.

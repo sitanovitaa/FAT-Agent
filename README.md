@@ -1,6 +1,6 @@
 # FAT Agent Suite
 
-FAT Agent Suite adalah paket agent dan workspace berbasis file untuk membantu tim Finance, Accounting, Tax, dan Reporting menggunakan Codex Desktop. Fokus utamanya adalah membuat alur kerja yang lebih aman, terstruktur, dan berbasis dokumen perusahaan, bukan sekadar chat bebas.
+FAT Agent Suite adalah paket agent dan workspace berbasis file untuk membantu tim Finance, Accounting, Tax, dan Reporting menggunakan Codex Desktop atau Google Antigravity. Fokus utamanya adalah membuat alur kerja yang lebih aman, terstruktur, dan berbasis dokumen perusahaan, bukan sekadar chat bebas.
 
 ## Ringkasan
 
@@ -88,6 +88,29 @@ Gunakan opsi ini jika ingin snapshot yang lebih stabil di `%USERPROFILE%\.codex\
 git clone https://github.com/sitanovitaa/FAT-Agent.git $HOME\fat-agent-suite
 powershell -ExecutionPolicy Bypass -File $HOME\fat-agent-suite\scripts\install-fat-skills.ps1
 ```
+
+## Instalasi untuk Antigravity
+
+Memerlukan Python 3. Dari root repository, jalankan:
+
+```bash
+python3 scripts/install-fat-antigravity.py
+```
+
+Installer memasang enam skill FAT ke Antigravity 2.0 dan Antigravity IDE,
+serta enam custom agent ke Antigravity 2.0. Instalasi ulang menyimpan backup
+paket FAT sebelumnya dan tidak mengubah konfigurasi MCP.
+
+Untuk memasang hanya pada satu project:
+
+```bash
+python3 scripts/install-fat-antigravity.py --workspace /path/ke/project
+```
+
+Buka project perusahaan yang berisi `fat-workspace/`, lalu mulai percakapan baru.
+Gunakan `/fat-company-context` untuk membangun context dan `/fat-coordinator`
+untuk koordinasi. Lihat [panduan Antigravity](docs/fat-suite/antigravity-install.md)
+untuk lokasi instalasi dan cara verifikasi.
 
 ## Cara Update Skill
 

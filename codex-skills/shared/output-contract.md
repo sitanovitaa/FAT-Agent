@@ -25,4 +25,4 @@ Orchestration mode additions:
 
 Workspace rule:
 - If the output is reusable, write it into `fat-workspace` instead of leaving it only in chat.
-- If the user provided a file directly in Codex, name it explicitly in `Source Files Provided In Session`.
+- If the user provided a file directly in the agent session, name it explicitly in `Source Files Provided In Session`.
